@@ -148,6 +148,8 @@ const users = [
 
 const userHeadings = users.map((user) => {
   return <h1 key={user.id}>{user.firstName}</h1>;
+
+  // user is a callback fanction of the map method
 });
 ```
 
@@ -181,6 +183,8 @@ component to display each color. In the example below, we'd need to use the
 
 ```jsx
 // ColorItem component
+
+//Working like a color card?
 function ColorItem(props) {
   return <li style={{ color: props.color }}>{props.color}</li>;
 }
